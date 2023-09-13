@@ -12,3 +12,6 @@
 
 # Modify default IP
 #sed -i 's/192.168.1.1/192.168.50.5/g' package/base-files/files/bin/config_generate
+sed -i 's/192.168.1.1/ 192.168.11.1/g' package/base-files/files/bin/config_generate
+sed -i 's/\/bin\/ash/\/bin\/bash/' package/base-files/files/etc/passwd
+sed -i "s/OpenWrt /Yang J build $(TZ=UTC-8 date "+%Y.%m.%d") @ OpenWrt /g" package/lean/default-settings/files/zzz-default-settings
